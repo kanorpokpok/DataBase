@@ -1,0 +1,8 @@
+sql.data:
+    image: microsoft/mssql-server-linux:2017-latest
+    restart: alway
+    environment:
+      - SA_PASSWORD=P@ssw0rd
+      - ACCEPT_EULA=Y
+    ports:
+      - "1433:1433"
