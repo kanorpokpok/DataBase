@@ -5,6 +5,6 @@ sql.data:
       - SA_PASSWORD=P@ssw0rd
       - ACCEPT_EULA=Y
     volumes:
-      - docker/data/db/opt/mssql:/var/opt/mssql
+      - /var/opt/mssql:/var/opt/mssql
     ports:
       - "1433:1433"
